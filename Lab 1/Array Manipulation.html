@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html><head>
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<html><head></head><body><h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Lab 1 Processing Arrays</h1>
+<p>This is a small lab based on the Arrays that were covered in level 1 and also in Level 2 CST8132 OOP.&nbsp; <strong>Due Date is this Sunday September 12, 11:59 PM.</strong>&nbsp;</p>
+<p>All Labs in CST8130 must be done using <a href="https://www.oracle.com/ca-en/java/technologies/javase-jdk11-downloads.html" target="_blank" rel="noopener">Java 11</a>, and <a href="https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-12/R/eclipse-inst-jre-win64.exe&amp;mirror_id=1135" target="_blank" rel="noopener">Eclipse IDE</a>&nbsp;(no other version or IDE is permitted)</p>
+<h1>Problem Description:</h1>
+<p>Download this <a href="Lab1-Processing%20Arrays.zip" target="_blank" rel="noopener">Lab 1_Processing Arrays</a>&nbsp;starter file. It contains two classes –<b><i>&nbsp;Numbers</i></b> and <b><i>Lab1.&nbsp; </i></b>You should load these classes into a project, and write the Java code as indicated in the classes according to the following specifications.&nbsp;&nbsp;</p>
+<p><strong>NOTE:&nbsp;</strong> Your code must never, never, ever “crap out”.&nbsp; (You must handle every possible condition) and you should never leave compile warnings without fixing them nor should you suppress them. Use the provided test plan template to implement exception handling and to thoroughly test your code.</p>
+<p>Your code must have clear, comprehensive programmer comments, Javadoc comments, for all methods.</p>
+<p>Test your code through the Lab 1 sample output below and also test using your own test cases.</p>
+<h2>Class Numbers</h2>
+<ul>
+<li>Data members:
+<ul>
+<li>a reference to a dynamically allocated array of Float references or float primitives: <strong>Do NOT use arraylist</strong>. You are to<strong> use an array </strong>in this lab.</li>
+<li>an int to hold the size of the array</li>
+<li>an int to hold the number of values currently in the array</li>
+</ul>
+</li>
+<li>Methods<br>
+<ul>
+<li>default constructor</li>
+<li>initial constructor using an int parameter to set size of the array</li>
+<li><strong>addValue</strong>&nbsp;– which will prompt the user to enter one float value</li>
+<li><strong>calcAverage</strong> – will return a float which is a average of the values in the array. Set number of decimal places to 2 max.</li>
+<li><strong>findMinMax - </strong>will return the minimum and maximum values in the array.</li>
+<li><strong>toString</strong> – will return a String of the values in the array</li>
+</ul>
+</li>
+</ul>
+<h2>Class Lab1</h2>
+<ul>
+<li>Methods
+<ul>
+<li><strong>main</strong> - Its purpose is to test the code you wrote in the <b><i>Numbers</i></b>&nbsp;class.&nbsp;It uses the helper method to display the menu and should loop until the user wishes to quit.&nbsp; Add code to process all items in the menu as per the output below. Use a switch statement for menu options.</li>
+<li><strong>displayMainMenu</strong> - Outputs the main menu to the console (standard output) .</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The main menu should look like this:
+<table width="450" height="182" style="height: 170px;">
+<tbody>
+<tr style="height: 170px;">
+<td style="width: 477.28px; height: 170px;">
+<pre>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display average of the values, minimum value, maximum value<br>6: To Exit<br>&gt; </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li>When an error is encountered, an appropriate error message should be displayed and then the main menu displayed again.</li>
+<li>Add your name, student number, lab section #, and a declaration of the solution as your own original work to the Javadoc comment on top each source file without changing current contents (a -1 mark penalty is given if this is missing or not implemented as per these instructions.&nbsp;&nbsp;Your declaration block: should mirror the one below:
+<div>/**</div>
+<div>&nbsp;*&nbsp;CET&nbsp;-&nbsp;CS&nbsp;Academic&nbsp;Level&nbsp;3</div>
+<div>&nbsp;*&nbsp;Declaration:&nbsp;I&nbsp;declare&nbsp;that&nbsp;this&nbsp;is&nbsp;my&nbsp;own&nbsp;original&nbsp;work&nbsp;and&nbsp;is&nbsp;free&nbsp;from&nbsp;Plagiarism</div>
+<div>&nbsp;*&nbsp;This&nbsp;class&nbsp;contains&nbsp;the&nbsp;dynamically&nbsp;allocated&nbsp;array&nbsp;and&nbsp;it's&nbsp;processing</div>
+<div>&nbsp;*&nbsp;Student&nbsp;Name:&nbsp;</div>
+<div>&nbsp;*&nbsp;Student&nbsp;Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div>&nbsp;*&nbsp;Section&nbsp;#:&nbsp;&nbsp;&nbsp;</div>
+<div>&nbsp;*&nbsp;Course:&nbsp;CST8130&nbsp;-&nbsp;Data&nbsp;Structures</div>
+<div>&nbsp;* Professor: James Mwangi PhD.&nbsp;</div>
+<div>&nbsp;*&nbsp;</div>
+<div>&nbsp;*/</div>
+<span style="text-decoration: underline;"></span></li>
+</ul>
+<p><strong>Submission:</strong>&nbsp;</p>
+<ul>
+<li>You will upload on Brightspace a zip folder of your solution named as follows: <strong>Lab1_Fname_Lname</strong> that contains - (.java source&nbsp;files), test plan, Javadoc.&nbsp;</li>
+<li>You may submit your solution&nbsp;<a href="/d2l/lms/dropbox/admin/mark/folder_submissions_users.d2l?db=322215&amp;ou=350477" target="_blank" rel="noopener"><span style="color: #2b78e4;">here</span> </a>or via Brightspace =&gt;Activities =&gt;Assignments =&gt; Lab1</li>
+</ul>
+<p></p>
+<h1>Sample Output: (<span style="color: #6aa84f;">green is user input</span>)</h1>
+<pre>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display average of the values, minimum value, maximum value<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">4</span><br>Numbers are:<br><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display average of the values, minimum value, maximum value<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">5</span><br>Average is: 0.0, Minimum value is 0.0, Maximum value is 0.0 
+
+Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display average of the values, minimum value, maximum value<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">3</span><br>Enter value: <span style="color: #6aa84f;">22.2</span><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display average of the values, minimum value, maximum value<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">3</span><br>Enter value: <span style="color: #6aa84f;">1.0</span><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display average of the values, minimum value, maximum value<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">3</span><br>Enter value: <span style="color: #6aa84f;">2</span><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display average of the values, minimum value, maximum value<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">4</span><br>Numbers are:<br>22.2<br>1.0<br>2.0<br><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">2</span><br>Enter new size of array: 4<br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">4</span><br>Numbers are:<br><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">3</span><br>Enter value: <span style="color: #6aa84f;">2.2</span><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">3</span><br>Enter value: <span style="color: #6aa84f;">1.1</span><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">3</span><br>Enter value: <span style="color: #6aa84f;">3.3</span><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">3</span><br>Enter value: <span style="color: #6aa84f;">4</span><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">3</span><br>Array full<br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">4</span><br>Numbers are:<br>2.2<br>1.1<br>3.3<br>4.0<br><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">5</span><br>Average is: 2.65, Minimum value is 1.1, Maximum value is 4.0 
+
+Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">1</span><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">3</span><br>Enter value: <span style="color: #6aa84f;">1</span><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">4</span><br>Numbers are:<br>1.0<br><br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">5</span><br>Average is: 1.0, Minimum value is 1.0, Maximum value is 1.0
+<br>Please select one of the following:<br>1: Initialize a default array<br>2: To specify the max size of the array<br>3: Add value to the array<br>4: Display values in the array<br>5: Display the average of the values<br>6: To Exit<br>&gt; <span style="color: #6aa84f;">6</span><br>Exiting...<br><br><br><br></pre></body></html>
+</body></html>
